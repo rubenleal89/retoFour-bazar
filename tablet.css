@@ -1,0 +1,9 @@
+.section-contacto , .section-nav{
+    margin: 0 0;
+    text-align: center;
+}
+
+.section-contacto figure, img{
+    align-items: center;
+}
+

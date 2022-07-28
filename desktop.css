@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #0F3460;
+    font-size: 1.4rem;
+    color: white;
+    display: grid;
+    grid-template-areas: "auto auto";
+    padding: 15px 0;
+}
+
+.section-contacto, .section-nav{
+    margin: 0 auto;
+}
+
+.section-contacto figure, figcaption, img{
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.section-contacto img{
+    width: 20px;
+    height: 20px;
+}
+
+.section-nav nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+header a{
+    color:white;
+}
+
+.select-nav{
+    color: white;
+    background: #0F3460;
+    border: #0F3460;
+}
