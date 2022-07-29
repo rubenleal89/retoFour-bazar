@@ -3,7 +3,16 @@
     text-align: center;
 }
 
-.section-contacto figure, img{
-    align-items: center;
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+        "contacto"
+        "navegacion";
 }
 
+.nav-header{
+    margin-top: 10px;
+    justify-content: center;
+}

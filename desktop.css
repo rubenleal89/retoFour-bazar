@@ -5,7 +5,6 @@
 }
 
 body{
-    display: grid;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,31 +17,24 @@ a{
 }
 
 header{
+    padding: 20px 100px;
     background-color: #0F3460;
     font-size: 1.4rem;
     color: white;
     display: grid;
-    grid-template-areas: "auto auto";
-    padding: 15px 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+        "contacto navegacion";
 }
 
-.section-contacto, .section-nav{
-    margin: 0 auto;
-}
-
-.section-contacto figure, figcaption, img{
-    display: inline-block;
-    margin: 0 4px;
+.section-contacto{
+    grid-area: contacto;
 }
 
 .section-contacto img{
     width: 20px;
     height: 20px;
-}
-
-.section-nav nav ul li{
-    display: inline-block;
-    margin: 0 5px;
 }
 
 header a{
@@ -53,4 +45,19 @@ header a{
     color: white;
     background: #0F3460;
     border: #0F3460;
+    grid-area: navegacion;
+}
+
+.section-contacto figure, img, figcaption{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.section-nav ul li{
+    display: inline-block;
+}
+
+.nav-header{
+    display: grid;
+    justify-content: end;
 }
