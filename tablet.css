@@ -16,3 +16,28 @@ header{
     margin-top: 10px;
     justify-content: center;
 }
+
+/****** MAIN ******/
+
+.sect-main-search{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "logoB logoB "
+        "search userBuy";
+    /* COMPLETAR GRID */
+}
+
+.icon-user-buy{
+    grid-area: userBuy;
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+}
+
+.icon-user-buy{
+    text-align: center;
+}

@@ -6,6 +6,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer foooter footer";
 }
 
 html{
@@ -24,7 +29,7 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1,1fr);
-    grid-template-areas: 
+    grid-template-areas:
         "contacto navegacion";
 }
 
@@ -60,4 +65,80 @@ header a{
 .nav-header{
     display: grid;
     justify-content: end;
+}
+
+/****** MAIN ******/
+
+main{
+    background-color: rgb(187, 215, 247);
+    padding: 0 100px;
+}
+
+.sect-main-search{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "logoB search userBuy";
+    /* COMPLETAR GRID */
+}
+
+.logo{
+    grid-area: logoB;
+    font-size: 3rem;
+    font-family: cursive;
+    color: #0F3460;
+    margin: auto 0;
+}
+
+main .main-input{
+    grid-area: search;
+    background: yellowgreen;
+    margin: auto 0;
+}
+
+main .main-input-container{
+    width: 425px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: grid;
+    grid-template-areas: "auto auto auto";
+    align-items: center;
+}
+
+main .main-input input{
+    width: 320px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+
+main .main-input .search-icon{
+    background-image: url("./img/icon-buscador.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 28px;
+    height: 18px;
+}
+
+.main-input-container button{
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+    padding: 9px 14px;
+    border-radius: 0 100px 100px 0;
+    background: #4E97FD;
+    border: 1px solid #3C74C2;
+}
+
+.icon-user-buy img{
+    width: 30px;
+    height: 30px;
+}
+
+.icon-user-buy{
+    grid-area: userBuy;
+    text-align: end;
 }
