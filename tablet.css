@@ -19,14 +19,16 @@ header{
 
 /****** MAIN ******/
 
+/****** Seccion Search ******/
+
 .sect-main-search{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        "logoB logoB "
-        "search userBuy";
-    /* COMPLETAR GRID */
+        "logoB logoB logoB "
+        "search categoria userBuy"
+        "nav nav nav";
 }
 
 .icon-user-buy{
@@ -38,6 +40,11 @@ header{
     text-align: center;
 }
 
-.icon-user-buy{
-    text-align: center;
+.main-input{
+    display: grid;
+    justify-content: center;
+}
+
+.nav-ul-select{
+    justify-content: center;
 }

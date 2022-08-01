@@ -21,6 +21,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style: none;  
+}
+
 header{
     padding: 20px 100px;
     background-color: #0F3460;
@@ -70,8 +74,7 @@ header a{
 /****** MAIN ******/
 
 main{
-    background-color: rgb(187, 215, 247);
-    padding: 0 100px;
+    padding: 10px 100px;
 }
 
 .sect-main-search{
@@ -79,9 +82,12 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "logoB search userBuy";
-    /* COMPLETAR GRID */
+        "logoB search userBuy"
+        "categoria nav nav";
+    gap: 20px 5px;
 }
+
+/****** Seccion Search ******/
 
 .logo{
     grid-area: logoB;
@@ -93,7 +99,6 @@ main{
 
 main .main-input{
     grid-area: search;
-    background: yellowgreen;
     margin: auto 0;
 }
 
@@ -141,4 +146,51 @@ main .main-input .search-icon{
 .icon-user-buy{
     grid-area: userBuy;
     text-align: end;
+}
+
+/****** Seccion Selects ******/
+
+.select-nav-categoria{
+    border: 0;
+    width: 140px;
+    outline: none;
+}
+
+.div-categoria{
+    width: 190px;
+    background-color: #F6F9FC;
+    grid-area: categoria;
+    display: grid;
+    grid-template-columns: 35px 130px;
+    grid-template-rows: 100%;
+    margin: auto 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.div-categoria img{
+    width: 20px;
+}
+
+.nav-main{
+    grid-area: nav;
+    margin: auto 0;
+}
+
+.nav-ul-select{
+    display: grid;
+    grid-template-columns: 67px 100px 130px 60px 110px 120px;
+    grid-template-rows: 100%;
+    gap: 0 10px;
+    justify-content: end;
+}
+
+.nav-ul-select select{
+    background-color: transparent;
+    outline: none;
+}
+
+.nav-ul-select select{
+    border: 0;
+    color: black;
 }
