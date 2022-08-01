@@ -73,8 +73,8 @@ header a{
 
 /****** MAIN ******/
 
-main{
-    padding: 10px 100px;
+.separacion-lr{
+    margin: 10px 100px;
 }
 
 .sect-main-search{
@@ -154,6 +154,7 @@ main .main-input .search-icon{
     border: 0;
     width: 140px;
     outline: none;
+    background-color: transparent;
 }
 
 .div-categoria{
@@ -193,4 +194,41 @@ main .main-input .search-icon{
 .nav-ul-select select{
     border: 0;
     color: black;
+}
+
+/******* Seccion Mural *******/
+
+.sect-mural{
+    padding: 40px 100px;
+    background-color: #EFEFEF;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "Titulo img"
+        "button img";
+}
+
+.sect-mural h1{
+    grid-area: Titulo;
+    font-size: 3rem;
+    width: 300px;
+    margin: 0 30px;
+}
+
+.sect-mural button{
+    grid-area: button;
+    width: 100px;
+    height: 30px;
+    background: #4E97FD;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.sect-mural img{
+    grid-area: img;
+    width: 400px;
 }

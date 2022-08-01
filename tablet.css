@@ -48,3 +48,17 @@ header{
 .nav-ul-select{
     justify-content: center;
 }
+
+.sect-mural{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 111px 90px;
+    grid-template-areas: 
+        "img"
+        "Titulo"
+        "button";
+    justify-items: center;
+}
+
+.sect-mural h1{
+    margin-top: 10px;
+}
