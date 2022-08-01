@@ -231,4 +231,5 @@ main .main-input .search-icon{
 .sect-mural img{
     grid-area: img;
     width: 400px;
+    margin: 0 auto;
 }
