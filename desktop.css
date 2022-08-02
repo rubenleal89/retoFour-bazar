@@ -74,7 +74,7 @@ header a{
 /****** MAIN ******/
 main{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 380px auto;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
         "search search"
@@ -250,4 +250,39 @@ main .main-input .search-icon{
 
 .aside-lista{
     grid-area: aside;
+}
+
+.aside-categorias li{
+    font-size: 1.6rem;
+    width: 250px;
+    height: 35px;
+    background-color: #F3f5f9;
+    display: grid;
+    grid-template-columns: 35px 200px;
+    grid-template-rows: 100%;
+    margin: auto 0;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.aside-lista select{
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-size: 1.6rem;
+}
+
+.aside-lista ul li a{
+    margin: auto 0;
+    color: black;
+}
+
+.aside-lista ul li img{
+    width: 20px;
+}
+
+.aside-categorias .background-azulClaro{
+    background-color: #B8DEFE;
 }
