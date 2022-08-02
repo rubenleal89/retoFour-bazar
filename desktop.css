@@ -73,13 +73,14 @@ header a{
 
 /****** MAIN ******/
 main{
+    font-size: 1.6rem;
     display: grid;
-    grid-template-columns: 380px auto;
+    grid-template-columns: 380px auto auto;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
-        "search search"
-        "mural mural"
-        "aside productos"
+        "search search search"
+        "mural mural mural"
+        "aside promocianal promocianal"
         ;
 }
 
@@ -250,10 +251,11 @@ main .main-input .search-icon{
 
 .aside-lista{
     grid-area: aside;
+    margin-left: 100px;
+    margin-top: 10px;
 }
 
 .aside-categorias li{
-    font-size: 1.6rem;
     width: 250px;
     height: 35px;
     background-color: #F3f5f9;
@@ -285,4 +287,101 @@ main .main-input .search-icon{
 
 .aside-categorias .background-azulClaro{
     background-color: #B8DEFE;
+}
+
+/******* Seccion Articulos *******/
+
+.sect-articlesPromocionales{
+    grid-area: promocianal;
+    margin-right: 100px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px 100px auto;
+    grid-template-areas: 
+        "enfermera cremas"
+        "topProducts topProducts"
+        "productos productos";
+    gap: 0 30px;
+}
+
+.arti-enfermera{
+    grid-area: enfermera;
+    background-color: #efefef;
+    border-radius: 20px;
+    height: 216px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: auto auto;
+}
+
+.arti-enfermera div{
+    background-color: #B8DEFE;
+    border-radius: 20px 100px 100px 20px;
+    text-align: center;
+    padding: 50px;
+}
+
+.arti-enfermera img{
+    height: 200px;
+    margin: auto auto;
+}
+
+.arti-enfermera div img{
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+}
+
+.arti-cremas{
+    grid-area: cremas;
+    background-color: #efefef;
+    border-radius: 20px;
+    height: 216px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: auto auto;
+}
+
+.arti-cremas img{
+    width: 200px;
+    margin: auto;
+}
+
+.arti-cremas div{
+    margin: auto 20px;
+    line-height: 30px;
+}
+
+.arti-cremas div button{
+    width: 100px;
+    height: 30px;
+    background: #4E97FD;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.div-topProducts{
+    grid-area: topProducts;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-rows: auto;
+    align-content: center;
+}
+
+.div-topProducts div p{
+    font-size: 1.4rem;
+}
+
+.div-topProducts select{
+    width: 100px;
+    height: 60px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
 }

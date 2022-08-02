@@ -62,3 +62,12 @@ header{
 .sect-mural h1{
     margin-top: 10px;
 }
+
+.sect-articlesPromocionales{
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+        "enfermera enfermera"
+        "cremas cremas"
+        "topProducts topProducts";
+    align-items: center;
+}
