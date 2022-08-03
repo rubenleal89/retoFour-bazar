@@ -57,7 +57,7 @@ header a{
     grid-area: navegacion;
 }
 
-.section-contacto figure, img, figcaption{
+.figure-contacto, .figcaption-contacto{
     display: inline-block;
     margin-left: 5px;
 }
@@ -81,7 +81,7 @@ main{
         "search search search"
         "mural mural mural"
         "aside promocianal promocianal"
-        ;
+        "aside productos productos";
 }
 
 .separacion-lr{
@@ -250,6 +250,8 @@ main .main-input .search-icon{
 /****** Aside ******/
 
 .aside-lista{
+    position: sticky;
+    top: 0;
     grid-area: aside;
     margin-left: 100px;
     margin-top: 10px;
@@ -297,11 +299,10 @@ main .main-input .search-icon{
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 250px 100px auto;
+    grid-template-rows: 250px 100px;
     grid-template-areas: 
         "enfermera cremas"
-        "topProducts topProducts"
-        "productos productos";
+        "topProducts topProducts";
     gap: 0 30px;
 }
 
@@ -313,7 +314,6 @@ main .main-input .search-icon{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, auto);
-    grid-template-areas: auto auto;
 }
 
 .arti-enfermera div{
@@ -342,7 +342,6 @@ main .main-input .search-icon{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, auto);
-    grid-template-areas: auto auto;
 }
 
 .arti-cremas img{
@@ -384,4 +383,175 @@ main .main-input .search-icon{
     outline: none;
     border: 0;
     background-color: transparent;
+}
+
+.marginCentrado{
+    margin: 0 auto;
+}
+
+.sect-ariclesProductos{
+    position: relative;
+    margin-right: 100px;
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "Vichy1 Bllue Sphygmomanometer" 
+        "topProducts2 topProducts2 topProducts2"
+        "Vichy2 brand fresh"
+        "loadMore loadMore loadMore"
+        "atenCliente atenCliente atenCliente";
+}
+.producto1{
+    grid-area: Vichy1;
+    position: relative;
+}
+.producto2{
+    grid-area: Bllue;
+}
+.producto3{
+    grid-area: Sphygmomanometer;
+    position: relative;
+}
+.div-topProducts2{
+    grid-area: topProducts2;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-rows: auto;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.producto4{
+    grid-area: Vichy2;
+}
+
+.producto5{
+    grid-area: brand;
+}
+
+.producto6{
+    grid-area: fresh;
+}
+
+.arti-productos{
+    background-color: white;
+    border: 2px solid #F9F9FB;
+    width: 270px;
+    height: 430px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.arti-productos h4{
+    background-color: #4E97FD;
+    width: 50px;
+    padding: 5px;
+    border-radius: 0 15px 15px 0 ;
+    font-size: 1rem;
+    color: white;
+}
+
+.arti-productos figure img{
+    width: 170px;
+    height: 170px;
+    margin: 45px 30px;
+}
+
+.rating img{
+    display: inline-block;
+    margin-top: 5px;
+    width: 15px;
+}
+
+.rating p{
+    display: inline-block;
+}
+
+.precio-venta, .precio-tachado{
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.precio-venta{
+    color:  #4E97FD;
+}
+
+.div-button button{
+    background-color: #4E97FD;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.button-corazon img{
+    width: 13px;
+    height: 13px;
+}
+
+.button-add{
+    width: 190px;
+}
+
+.arti-productos figure figcaption{
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+.div-topProducts2 div p{
+    font-size: 1.4rem;
+}
+
+.div-topProducts2 select{
+    width: 100px;
+    height: 60px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.sect-buttonLoad{
+    grid-area: loadMore;
+    display: grid;
+    justify-content: center;
+}
+
+.sect-buttonLoad button{
+    background-color: #4E97FD;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.sect-atencionCliente{
+    width: 270px;
+    padding: 30px 20px;
+    border: 2px solid #F9F9FB;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    border-radius: 10px;
+}
+
+.sect-atencionCliente h3{
+    color: #4E97FD;
+}
+
+.flechaL{
+    position: absolute;
+    bottom: 160px;
+    left: -15px;
+    cursor: pointer;
+}
+
+.flechaR{
+    position: absolute;
+    bottom: 160px;
+    right: -15px;
+    cursor: pointer;
 }

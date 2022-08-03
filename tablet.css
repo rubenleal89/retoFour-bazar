@@ -49,6 +49,8 @@ header{
     justify-content: center;
 }
 
+/* Seccion Mural */
+
 .sect-mural{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 111px 90px;
@@ -63,6 +65,8 @@ header{
     margin-top: 10px;
 }
 
+/* Seccion Articulos Promocionales */
+
 .sect-articlesPromocionales{
     grid-template-rows: repeat(3, auto);
     grid-template-areas: 
@@ -70,4 +74,28 @@ header{
         "cremas cremas"
         "topProducts topProducts";
     align-items: center;
+    gap: 10px 0;
+}
+
+/* seccion productos */
+
+.sect-ariclesProductos{
+    position: relative;
+    margin-right: 100px;
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, auto);
+    grid-template-areas:
+        "Vichy1" 
+        "Bllue"
+        "Sphygmomanometer"
+        "topProducts2"
+        "Vichy2"
+        "brand"
+        "fresh"
+        "loadMore"
+        "atenCliente"
+        "atenCliente"
+        "atenCliente";
 }
