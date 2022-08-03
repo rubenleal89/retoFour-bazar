@@ -250,8 +250,6 @@ main .main-input .search-icon{
 /****** Aside ******/
 
 .aside-lista{
-    position: sticky;
-    top: 0;
     grid-area: aside;
     margin-left: 100px;
     margin-top: 10px;
@@ -555,6 +553,8 @@ main .main-input .search-icon{
     right: -15px;
     cursor: pointer;
 }
+
+/****** Footer ******/
 
 footer{
     background-color: #183C92;
